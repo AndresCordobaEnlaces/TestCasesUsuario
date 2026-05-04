@@ -1,4 +1,4 @@
-﻿package io.github.mperedrii;
+package io.github.mperedrii;
 
 /**
  * Ejercicio de pruebas unitarias sobre la clase Usuario. Se requiere implementar la clase
@@ -15,6 +15,13 @@ public class Usuario {
     private String contrasena;
     private int edad;
     private String correo;
+
+    public Usuario(String usuario, String contrasena, int edad, String correo) {
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.edad = edad;
+        this.correo = correo;
+    }
 
     public boolean validarUsuario() {
         if (usuario == null)
