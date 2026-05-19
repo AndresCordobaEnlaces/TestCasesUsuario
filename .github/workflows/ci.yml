@@ -19,3 +19,5 @@ jobs:
           distribution: 'temurin'
       - name: Run tests
         run: mvn test
+      - name: Verify
+        run: mvn verify
